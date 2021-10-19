@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/sass/main.css" />
+    <link rel="shortcut-icon" type="image/pgn" href="img/favicon.png" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Koristim BEM notaciju za klase -->
+    <!-- Container start -->
+    <div class="container">
+      <!--Header Start-->
+      <header class="header">
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search hotels"
+          />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">13</span>
+            <div class="user-nav__dropchat">
+              <h2 class="user-nav__dropchat__title">Messenger</h2>
+              <div class="user-nav__dropchat__container">
+                <figure class="user-nav__dropchat__photo-box">
+                  <img
+                    src="img/user-2.jpg"
+                    alt="User chat photo"
+                    class="user-nav__dropchat__photo"
+                  />
+                </figure>
+                <div class="user-nav__dropchat__chat-box">
+                  <h4 class="user-nav__dropchat__user-name">Mary Thomas</h4>
+                  <p class="user-nav__dropchat__user-chat">
+                    Lorem ipsum dolor sit amet...
+                  </p>
+                </div>
+                <div class="user-nav__dropchat__time-box">
+                  <p class="user-nav__dropchat__time">4 h</p>
+                </div>
+              </div>
+
+              <div class="user-nav__dropchat__container">
+                <figure class="user-nav__dropchat__photo-box">
+                  <img
+                    src="img/link_profile_photo.png"
+                    alt="User chat photo"
+                    class="user-nav__dropchat__photo"
+                  />
+                </figure>
+                <div class="user-nav__dropchat__chat-box">
+                  <h4 class="user-nav__dropchat__user-name">Hrvoje Vukov</h4>
+                  <p class="user-nav__dropchat__user-chat">
+                    Lorem ipsum dolor sit amet...
+                  </p>
+                </div>
+                <div class="user-nav__dropchat__time-box">
+                  <p class="user-nav__dropchat__time">17 h</p>
+                </div>
+              </div>
+
+              <div class="user-nav__dropchat__container">
+                <figure class="user-nav__dropchat__photo-box">
+                  <img
+                    src="img/user-6.jpg"
+                    alt="User chat photo"
+                    class="user-nav__dropchat__photo"
+                  />
+                </figure>
+                <div class="user-nav__dropchat__chat-box">
+                  <h4 class="user-nav__dropchat__user-name">Lucy Crazylove</h4>
+                  <p class="user-nav__dropchat__user-chat">
+                    Lorem ipsum dolor sit amet...
+                  </p>
+                </div>
+                <div class="user-nav__dropchat__time-box">
+                  <p class="user-nav__dropchat__time">23 h</p>
+                </div>
+              </div>
+
+              <div class="user-nav__dropchat__container">
+                <figure class="user-nav__dropchat__photo-box">
+                  <img
+                    src="img/user-4.jpg"
+                    alt="User chat photo"
+                    class="user-nav__dropchat__photo"
+                  />
+                </figure>
+                <div class="user-nav__dropchat__chat-box">
+                  <h4 class="user-nav__dropchat__user-name">Peter Wolf</h4>
+                  <p class="user-nav__dropchat__user-chat">
+                    Lorem ipsum dolor sit amet...
+                  </p>
+                </div>
+                <div class="user-nav__dropchat__time-box">
+                  <p class="user-nav__dropchat__time">1 w</p>
+                </div>
+              </div>
+
+              <div class="user-nav__dropchat__container">
+                <figure class="user-nav__dropchat__photo-box">
+                  <img
+                    src="img/user-5.jpg"
+                    alt="User chat photo"
+                    class="user-nav__dropchat__photo"
+                  />
+                </figure>
+                <div class="user-nav__dropchat__chat-box">
+                  <h4 class="user-nav__dropchat__user-name">Pietro Giovanni</h4>
+                  <p class="user-nav__dropchat__user-chat">
+                    Lorem ipsum dolor sit amet...
+                  </p>
+                </div>
+                <div class="user-nav__dropchat__time-box">
+                  <p class="user-nav__dropchat__time">1 w</p>
+                </div>
+              </div>
+
+              <div class="user-nav__dropchat__container">
+                <figure class="user-nav__dropchat__photo-box">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="User chat photo"
+                    class="user-nav__dropchat__photo"
+                  />
+                </figure>
+                <div class="user-nav__dropchat__chat-box">
+                  <h4 class="user-nav__dropchat__user-name">Nick Smith</h4>
+                  <p class="user-nav__dropchat__user-chat">
+                    Lorem ipsum dolor sit amet...
+                  </p>
+                </div>
+                <div class="user-nav__dropchat__time-box">
+                  <p class="user-nav__dropchat__time">2 w</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="img/link_profile_photo.png"
+              alt="User photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Hrvoje</span>
+            <div class="user-nav__user-dropmenu">
+              <ul class="user-nav__user-dropmenu__list">
+                <li class="user-nav__user-dropmenu__item">
+                  <img
+                    src="img/logo.png"
+                    alt=""
+                    class="user-nav__user-dropmenu__logo"
+                  />
+                  <a href="#" class="user-nav__user-dropmenu__link">Account</a>
+                </li>
+                <li class="user-nav__user-dropmenu__item">
+                  <svg class="user-nav__user-dropmenu__icon">
+                    <use href="img/spritehover.svg#icon-wallet"></use>
+                  </svg>
+
+                  <a href="#" class="user-nav__user-dropmenu__link">Payments</a>
+                </li>
+                <li class="user-nav__user-dropmenu__item">
+                  <svg class="user-nav__user-dropmenu__icon">
+                    <use href="img/spritehover.svg#icon-shopping-cart"></use>
+                  </svg>
+                  <a href="#" class="user-nav__user-dropmenu__link"
+                    >Reservations</a
+                  >
+                </li>
+                <li class="user-nav__user-dropmenu__item">
+                  <svg class="user-nav__user-dropmenu__icon">
+                    <use href="img/spritehover.svg#icon-log-out"></use>
+                  </svg>
+                  <a href="#" class="user-nav__user-dropmenu__link">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- content nam služi kao container za flex-->
+      <!-- Content Start -->
+      <div class="content">
+        <!-- Sidebar Start -->
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>hotel</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Car Rental</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="legal">&copy; 2021 by trillo. All rights reserved.</div>
+        </nav>
+        <!--Sidebar End-->
+
+        <!-- Main Content start -->
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="Photo of "
+                class="gallery__photo"
+              />
+              <figcaption class="gallery__caption">
+                An ideal world. If only for a night.
+              </figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="Photo of "
+                class="gallery__photo"
+              />
+              <figcaption class="gallery__caption">
+                Best memories start here.
+              </figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="Photo of "
+                class="gallery__photo"
+              />
+              <figcaption class="gallery__caption">
+                Find Your Freedom!
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">Sunny Island Resort</h1>
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use href="img/sprite.svg#icon-star-outlined"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use href="img/sprite.svg#icon-star-outlined"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use href="img/sprite.svg#icon-star-outlined"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use href="img/sprite.svg#icon-star-outlined"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use href="img/sprite.svg#icon-star-outlined"></use>
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Dubrovnik, Croatia</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.9</div>
+              <div class="overview__rating-count">votes 850</div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
+              </p>
+              <p class="paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free wifi in all the rooms</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak all languages</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lucy and 3 other friends recommend this hotel.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="/img/user-3.jpg"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="/img/user-4.jpg"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="/img/user-5.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="/img/user-6.jpg"
+                    alt="Friend 4"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <figure class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-1.jpg" alt="" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Feb 23rd, 2017</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-2.jpg" alt="" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Mary Thomas</p>
+                    <p class="review__user-date">Sept 13th, 2017</p>
+                  </div>
+                  <div class="review__rating">9.3</div>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline">Show all<span>&rarr;</span></button>
+            </figure>
+          </div>
+
+          <div class="cta">
+            <h2 class="cta__book-now">
+              Good news we have 4 free rooms for your selected dates!
+            </h2>
+            <button class="btn">
+              <span class="btn__visible">Book now</span>
+              <span class="btn__invisible">only 4 rooms left</span>
+            </button>
+          </div>
+        </main>
+        <!-- Main Content End -->
+      </div>
+      <!-- Content end -->
+    </div>
+
+    <!-- Container end -->
+  </body>
+</html>

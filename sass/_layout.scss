@@ -1,0 +1,101 @@
+.container {
+  //prvo def. width containera na max-width tako da se container može smanjiti ako nema dovoljno prostora prikazivati width containera koji želimo, a to je 120rem; ako nema dovoljno prostora onda okupira 120rem dostupnog vw,tj.width postane available viewport width
+  max-width: 120rem;
+
+  //trik kako centrirati container,postavimo 8 rem gore i dolje i lijevo desno auto.tako centrira container unutar parent elementa koji je body
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%; //da budemo 100% sigurni
+  }
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
+}
+
+.content {
+  display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+//Flex-grow:1 kažemo da element naraste koliko god ima prostora
+.hotel-view {
+  flex: 1;
+
+  //SAMO ZA TEST
+
+  // height: 80rem; želimo da content definira height boxa.
+}
+
+//postavimo font-size na roditelja i sva djeca će naslijediti
+.detail {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+.description {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+.user-reviews {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
