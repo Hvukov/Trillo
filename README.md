@@ -4,8 +4,9 @@ Trillo is a mockup project completed with HTML and SASS.
 
 ## Overview
 ---
-Please check the site:
+Please check the site @
 https://hardcore-hawking-e7a23e.netlify.app/
+
 Designed by Jonas Schmedtmann but I have implemented it and added additional stylings.
 
 
