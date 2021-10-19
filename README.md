@@ -7,6 +7,10 @@ Trillo is a mockup project completed with HTML and SASS.
 Designed by Jonas Schmedtmann but I have implemented it and added additional stylings.
 
 
+https://user-images.githubusercontent.com/79806596/137873518-a8f26a2e-0563-4f63-9929-508f8d3abd60.mp4
+
+
+
 ## Main Features
 ---
 - Fully responsive
